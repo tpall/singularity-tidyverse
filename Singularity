@@ -18,6 +18,7 @@ From: tpall/singularity-rstudio@debian
   libpq-dev \
   libssh2-1-dev \
   unixodbc-dev \
+  mesa-common-dev \
   && install2.r --error \
     --deps TRUE \
     tidyverse \
