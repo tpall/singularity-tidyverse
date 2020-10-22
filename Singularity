@@ -14,7 +14,7 @@ From: tpall/singularity-r:3.6.3@buster
   libcairo2-dev \
   libsqlite3-dev \
   libmariadbd-dev \
-  libmariadb-client-lgpl-dev \
+  libmariadb-dev-compat \
   libpq-dev \
   libssh2-1-dev \
   unixodbc-dev \
