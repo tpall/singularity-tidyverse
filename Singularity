@@ -19,9 +19,9 @@ From: tpall/singularity-r:3.6.3
   libssh2-1-dev \
   unixodbc-dev \
   mesa-common-dev \
-  && install2.r --error \
-    --deps TRUE \
+  && install2.r --deps TRUE \
     tidyverse \
+    dplyr \
     lubridate \
     devtools \
     formatR \
