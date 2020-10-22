@@ -21,6 +21,8 @@ From: tpall/singularity-r:3.6.3
     libssh2-1-dev \
     unixodbc-dev \
     libudunits2-dev \
+    libcurl4-openssl-dev \
+    libssl-dev \
   && install2.r --error \
     --deps TRUE \
     --skipinstalled \
