@@ -1,5 +1,5 @@
 BootStrap: shub
-From: tpall/singularity-r:3.6.3@buster
+From: tpall/singularity-r:3.6.3@master
 
 %labels
   Maintainer tpall
