@@ -1,11 +1,11 @@
 BootStrap: shub
-From: tpall/singularity-rstudio@debian
+From: tpall/singularity-r:3.6.3@buster
 
 %labels
   Maintainer tpall
 
 %help
-  This will run RStudio Server with tidyverse + some other packages installed
+  This will run R tidyverse + some other packages
 
 %post
   ## Download and install tidyverse & other packages
@@ -22,7 +22,7 @@ From: tpall/singularity-rstudio@debian
   && install2.r --error \
     --deps TRUE \
     tidyverse \
-    dplyr \
+    lubridate \
     devtools \
     formatR \
     remotes \
@@ -31,4 +31,7 @@ From: tpall/singularity-rstudio@debian
     BiocManager \
     here \
     glue \
-    readxl
+    readxl \
+    skimr \
+    rmarkdown \
+    bookdown
