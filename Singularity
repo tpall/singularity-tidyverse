@@ -20,6 +20,7 @@ From: tpall/singularity-r:3.6.3
     libsqlite3-dev \
     libssh2-1-dev \
     unixodbc-dev \
+    libudunits2-dev \
   && install2.r --error \
     --deps TRUE \
     --skipinstalled \
