@@ -26,6 +26,8 @@ From: tpall/singularity-r:latest
     libgdal-dev \
     libgsl-dev \
     libnode-dev \
+    libharfbuzz-dev \
+    libfribidi-dev \
   && install2.r --error \
     --deps TRUE \
     --skipinstalled \
