@@ -30,8 +30,10 @@ From: tpall/singularity-r:latest
     --deps TRUE \
     --skipinstalled \
     tidyverse \
+    lubridate \
     remotes \
     rmarkdown \
+    bookdown \
     BiocManager \
     vroom \
     gert \
