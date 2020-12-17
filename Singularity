@@ -1,5 +1,5 @@
 BootStrap: shub
-From: tpall/singularity-r:4.0.3
+From: tpall/singularity-r:latest
 
 %labels
   Maintainer tpall
@@ -30,7 +30,7 @@ From: tpall/singularity-r:4.0.3
     --deps TRUE \
     --skipinstalled \
     tidyverse \
-    devtools \
+    remotes \
     rmarkdown \
     BiocManager \
     vroom \
