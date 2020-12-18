@@ -70,8 +70,8 @@ jobs:
         echo "Using Singularity image: ${SINGULARITY_IMAGE}"
         version () {
           singularity inspect "${SINGULARITY_IMAGE}" | \
-            grep "R_VERSION" | \
-            awk -F'"' '{print $4}'
+            grep "R_V" | \
+            awk -F' ' '{print $2}'
         }
         set -e
         set -x
