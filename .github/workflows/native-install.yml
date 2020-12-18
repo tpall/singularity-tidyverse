@@ -77,6 +77,6 @@ jobs:
         # Verify R version
         singularity exec ${SINGULARITY_IMAGE} r -q -e "stopifnot(getRversion() == '$(version)')"
         # Load library
-        singularity exec R -e "library(tidyverse)"
+        singularity exec ${SINGULARITY_IMAGE} r -q -e "library(tidyverse)"
         { set +x; } 2>/dev/null
         echo "All tests passed!"
