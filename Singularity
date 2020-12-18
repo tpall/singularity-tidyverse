@@ -36,7 +36,6 @@ From: tpall/singularity-r:latest
     remotes \
     rmarkdown \
     bookdown \
-    BiocManager \
     vroom \
     gert \
     readxl \
