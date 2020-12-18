@@ -60,3 +60,22 @@ jobs:
            echo "Present working directory: $PWD"
            ls
        fi
+    
+    - name: Test
+      env:
+        SINGULARITY_IMAGE: container-${{ matrix.recipe }}.sif
+      run: |
+        echo "Using Singularity image: ${SINGULARITY_IMAGE}"
+        version () {
+          singularity inspect "${SINGULARITY_IMAGE}" | \
+            grep "R_VERSION" | \
+            awk -F'"' '{print $4}'
+        }
+        set -e
+        set -x
+        # Verify R version
+        singularity exec ${SINGULARITY_IMAGE} r -q -e "stopifnot(getRversion() == '$(version)')"
+        # Load library
+        singularity exec R -e "library(tidyverse)"
+        { set +x; } 2>/dev/null
+        echo "All tests passed!"
